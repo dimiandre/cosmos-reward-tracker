@@ -93,6 +93,14 @@ export default {
         this.$http.get("https://stargate.cosmos.network/staking/delegators/" + this.form.address +"/txs")
         .then(function (res) {
 
+            self.items = [];
+            self.atomPrice = 0;
+            self.bonded_atoms = 0;
+            self.not_bonded_atoms = 0;
+            self.shares = 0;
+            self.inflation = 0;
+            self.reward = 0;
+
             self.items = res.data.map(function(obj) {
 
                 // TODO: consider transactions with more then one message
