@@ -36,7 +36,7 @@
 
             <b-card title="Estimated Reward" v-if="reward > 0">
                 <b-card-text>
-                    If you delegate all your ATOMs to stake.fish in one year you will get around <br /> 
+                    If you keep all your ATOMs delegated in one year you will get around <br /> 
                     <big>{{ reward }} ATOMs</big>
                 </b-card-text>
                 <div slot="footer"><small class="text-muted">Last updated 1 mins ago</small></div>
