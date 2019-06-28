@@ -8,6 +8,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootswatch/dist/cosmo/bootstrap.min.css'
 
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 new Vue({
   el: '#app',
   render: h => h(App)
